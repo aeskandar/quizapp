@@ -1,0 +1,22 @@
+INSERT INTO question (id, category, difficulty, option1, option2, option3, question_text, correct_answer)
+VALUES
+    (1, 'Java', 'Easy', '4 bytes', '2 bytes', '8 bytes', 'What is the size of int in Java?', '4 bytes'),
+    (2, 'Python', 'Medium', 'def', 'function', 'lambda', 'Which keyword is used to define a function in Python?', 'def'),
+    (3, 'TypeScript', 'Hard', 'Type annotations', 'Syntax', 'Compilation', 'What is the main difference between TypeScript and JavaScript?', 'Type annotations'),
+    (4, 'Java', 'Easy', 'start()', 'run()', 'begin()', 'Which method is used to start a thread in Java?', 'start()'),
+    (5, 'Python', 'Medium', 'virtualenv', 'venv', 'env', 'How do you create a virtual environment in Python?', 'venv'),
+    (6, 'TypeScript', 'Hard', 'interface', 'type', 'class', 'How do you define an interface in TypeScript?', 'interface'),
+    (7, 'Java', 'Easy', 'true', 'false', 'null', 'What is the default value of a boolean in Java?', 'false'),
+    (8, 'Python', 'Medium', 'pandas', 'numpy', 'matplotlib', 'Which library is used for data manipulation in Python?', 'pandas'),
+    (9, 'TypeScript', 'Hard', 'To make properties immutable', 'To define constants', 'To create readonly variables', 'What is the purpose of the "readonly" modifier in TypeScript?', 'To make properties immutable'),
+    (10, 'Java', 'Easy', 'java.util', 'java.lang', 'java.io', 'Which package contains the Random class in Java?', 'java.util'),
+    (11, 'Python', 'Medium', 'try-except', 'try-catch', 'try-finally', 'How do you handle exceptions in Python?', 'try-except'),
+    (12, 'TypeScript', 'Hard', 'To represent values that never occur', 'To define infinite loops', 'To create unending functions', 'What is the use of the "never" type in TypeScript?', 'To represent values that never occur'),
+    (13, 'Java', 'Easy', 'Object', 'Class', 'Base', 'What is the parent class of all classes in Java?', 'Object'),
+    (14, 'Python', 'Medium', 'pip install', 'python install', 'install package', 'How do you install a package in Python?', 'pip install'),
+    (15, 'TypeScript', 'Hard', 'tuple', 'array', 'list', 'How do you declare a tuple in TypeScript?', 'tuple'),
+    (16, 'Java', 'Easy', '.class', '.java', '.byte', 'What is the extension of Java bytecode files?', '.class'),
+    (17, 'Python', 'Medium', 'len()', 'size()', 'length()', 'Which function is used to get the length of a list in Python?', 'len()'),
+    (18, 'TypeScript', 'Hard', 'To define abstract methods', 'To create abstract classes', 'To implement interfaces', 'What is the purpose of the "abstract" class in TypeScript?', 'To define abstract methods'),
+    (19, 'Java', 'Easy', 'extends', 'implements', 'inherits', 'Which keyword is used to inherit a class in Java?', 'extends'),
+    (20, 'Python', 'Medium', '{key: value}', '[key: value]', '(key, value)', 'How do you create a dictionary in Python?', '{key: value}');

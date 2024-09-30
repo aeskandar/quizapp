@@ -4,7 +4,6 @@ package ae.eskandar.quizapp.model;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Type;
 
 import java.util.List;
 
@@ -21,17 +20,13 @@ public class QuizDao {
     private Integer id;
 
     private String title;
-    private int questionCount;
-    private String category;
 
     @ManyToMany
     private List<QuestionDao> questions;
 
 
-    public QuizDao(String title, int questionCount, String category, List<QuestionDao> questions) {
+    public QuizDao(String title, List<QuestionDao> questions) {
         this.title = title;
-        this.questionCount = questionCount;
-        this.category = category;
         this.questions = questions;
     }
 
