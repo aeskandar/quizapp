@@ -43,18 +43,10 @@ public class QuestionService {
         return mapQuestionDaoToQuestion(questionRepository.save(questionDao));
     }
 
-    public List<QuestionDao> getNQuestionsByCategory(int count, String category) {
-        List<Question> allQuestions = this.getQuestionsByCategory(category);
-        if (count == allQuestions.size()) {
-            return allQuestions.stream().map(this::mapQuestionToQuestionDao).toList();
-        }
-        List<Question> questions = new ArrayList<>();
-        Random random = new Random();
-        for (int i = 0; i < count; i++) {
-            questions.add(allQuestions.get(random.nextInt(allQuestions.size())));
-        }
-        return questions.stream().map(this::mapQuestionToQuestionDao).toList();
+    public List<QuestionDao> getNQuestionsByCategory(String category, int count) {
+        List<QuestionDao> questions = this.getQuestionsByCategory(category).stream().limit(count).map(this::mapQuestionToQuestionDao).toList();
 
+        return questions;
     }
 
     public Question mapQuestionDaoToQuestion(QuestionDao questionDao) {

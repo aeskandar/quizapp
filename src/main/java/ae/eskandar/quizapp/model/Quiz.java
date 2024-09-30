@@ -9,7 +9,5 @@ import java.util.List;
 @AllArgsConstructor
 public class Quiz {
     private String title;
-    private int questionCount;
-    private String category;
     private List<Question> questions;
 }
